@@ -83,7 +83,20 @@
     "acid": "Phosphorsäure 59 % (Advanced Hydroponics pH Down Bloom)",
     "richtwert_ml_per_L": 0.12,
     "P_from_acid_mgL": 31.3,
-    "note": "Gemessen: 10 L Keimling-Ansatz pH 7.6 -> 1.0 ml = pH 6.1, +0.6 ml = pH 5.14 (zu tief). Ca. 1.2 ml/10 L für pH 5.8. In kleinen Schritten zugeben, unter pH 6 fällt der pH sehr schnell."
+    "note": "Gemessen: 10 L Keimling-Ansatz pH 7.6 -> 1.0 ml = pH 6.1, +0.6 ml = pH 5.14 (zu tief). Ca. 1.2 ml/10 L für pH 5.8. In kleinen Schritten zugeben, unter pH 6 fällt der pH sehr schnell.",
+    "measured_veg_10L": {
+      "tap_pH": 7.8,
+      "tap_EC_mScm": 0.25,
+      "EC_after_micro": 0.73,
+      "EC_after_grow": 1.31,
+      "EC_after_bittersalz": 1.565,
+      "EC_after_ca": 1.846,
+      "pH_before_acid": 7.06,
+      "pH_after_1ml_acid": 5.99,
+      "pH_after_1.1ml_acid": 5.84,
+      "EC_final": 1.838,
+      "acid_ml_per_L": 0.11
+    }
   },
   "target_ranges": {
     "vegetative": {
@@ -348,12 +361,12 @@
         "TA_Bloom_ml": 0,
         "Bittersalz_g": 0.4,
         "Canna_Mono_Calcium_ml": 0.6,
-        "pH_Down_Phosphorsaeure_59_ml": 0.12
+        "pH_Down_Phosphorsaeure_59_ml": 0.11
       },
       "targets": {
         "EC_mScm": [
-          1.4,
-          1.6
+          1.7,
+          1.9
         ],
         "pH": [
           5.5,
@@ -362,7 +375,7 @@
       },
       "totals_mgL": {
         "N": 161.4,
-        "P": 39.3,
+        "P": 36.7,
         "K": 107.4,
         "Ca": 149.2,
         "Mg": 49.3,
@@ -384,7 +397,8 @@
         ],
         "first_shot": "1h nach Licht an",
         "last_shot": "2h vor Licht aus"
-      }
+      },
+      "notes": "Gemessen bei 10 L: EC 1,84, pH 7,06 vor Säure, 1,1 ml Säure -> pH 5,84. Beim Umstieg aus dem Keimlingsschema erst mit 80 % starten (EC ca. 1,5), nach 2-3 Tagen auf 100 %."
     },
     "early_bloom": {
       "description": "Frühe Blüte, Woche 1-2 nach Flip",

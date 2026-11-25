@@ -19,3 +19,7 @@ Die pH-Korrektur erfolgt mit Phosphorsäure 59 %. Bei hartem Wasser (4,0 °dH Ka
 Die EC-Ziele sind Schätzwerte. Die Rezeptur hat Vorrang, die EC ist nur Kontrolle.
 
 Die Wasserwerte (Ca, Mg, Karbonathärte) stammen aus 2025 und sollten mit der aktuellen Wasseranalyse abgeglichen werden.
+
+## Gemessene Werte (Veg-Rezeptur, 10 L)
+
+Leitungswasser pH 7,8 / EC 0,25. EC nach Micro 0,73, Grow 1,31, Bittersalz 1,565, Ca 1,846. pH vor Säure 7,06; 1,0 ml Säure → 5,99; 1,1 ml → 5,84; EC final 1,84. Das sind 0,11 ml/l Säure, P gesamt ca. 36,7 mg/l. Beim Umstieg erst mit 80 % starten.

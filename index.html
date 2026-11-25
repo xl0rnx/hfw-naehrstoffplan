@@ -414,15 +414,15 @@ td.dose-amt{font-weight:600;color:var(--green);font-size:13.5px}
         <tr><td>TA Bloom</td><td class="na">–</td><td class="na">–</td><td class="na">–</td><td class="na">–</td><td class="na">–</td><td class="na">–</td><td class="na">–</td></tr>
         <tr><td>Bittersalz</td><td class="dose">0,40 g</td><td>–</td><td>–</td><td>–</td><td>–</td><td>39,4</td><td>52,0</td></tr>
         <tr><td>Canna Ca</td><td class="dose">0,60 ml</td><td>42,3</td><td>–</td><td>–</td><td>63,8</td><td>–</td><td>–</td></tr>
-        <tr><td>pH-Down (H₃PO₄ 59 %)</td><td class="dose">0,12 ml</td><td>–</td><td>31,3</td><td>–</td><td>–</td><td>–</td><td>–</td></tr>
+        <tr><td>pH-Down (H₃PO₄ 59 %)</td><td class="dose">0,11 ml</td><td>–</td><td>28,7</td><td>–</td><td>–</td><td>–</td><td>–</td></tr>
         <tr><td class="lw">Leitungswasser</td><td></td><td class="lw">1,8</td><td class="lw">–</td><td class="lw">3,1</td><td class="lw">31,7</td><td class="lw">1,1</td><td class="lw">2,4</td></tr>
-        <tr class="total"><td>Summe mg/l</td><td></td><td>161,4</td><td>39,3</td><td>107,4</td><td>149,2</td><td>49,3</td><td>54,4</td></tr>
+        <tr class="total"><td>Summe mg/l</td><td></td><td>161,4</td><td>36,7</td><td>107,4</td><td>149,2</td><td>49,3</td><td>54,4</td></tr>
       </table></div>
       <div class="ngrid" id="veg-grid"></div>
-      <div class="note">Veg ohne TA Bloom: P kommt hier fast nur aus der Phosphorsäure (ca. 31 mg/l bei 0,12 ml/l). Mit Bloom läge P über dem Limit von 40. Bittersalz 0,40 g gleicht Mg und S aus.</div>
+      <div class="note">Veg ohne TA Bloom: P kommt hier fast nur aus der Phosphorsäure (ca. 29 mg/l bei 0,11 ml/l, gemessen). Mit Bloom läge P über dem Limit von 40. Bittersalz 0,40 g gleicht Mg und S aus. Gemessen bei 10 L: EC 1,84, pH 7,06 vor Säure, 1,1 ml Säure → pH 5,84. Beim Umstieg aus dem Keimlingsschema erst mit ca. 80 % starten (EC ca. 1,5), nach 2–3 Tagen ohne Spitzenbrennen auf 100 %.</div>
     </div>
     <div class="cards">
-      <div class="card"><div class="lbl">EC-Ziel</div><div class="val">1,4–1,6</div><div class="sub">mS/cm inkl. LW</div></div>
+      <div class="card"><div class="lbl">EC-Ziel</div><div class="val">1,7–1,9</div><div class="sub">mS/cm inkl. LW · gemessen 1,84</div></div>
       <div class="card"><div class="lbl">pH-Ziel</div><div class="val">5,5–6,0</div><div class="sub">Mineralwolle</div></div>
       <div class="card"><div class="lbl">Ca:Mg</div><div class="val">3,0 : 1</div><div class="sub">✓ optimal</div></div>
       <div class="card"><div class="lbl">Shots/Tag</div><div class="val">6–8</div><div class="sub">~100 ml/Slab</div></div>
@@ -617,7 +617,7 @@ td.dose-amt{font-weight:600;color:var(--green);font-size:13.5px}
 
 <script>
 const D={
-  veg:  {N:161.4,P:39.3,K:107.4,Ca:149.2,Mg:49.3,S:54.4},
+  veg:  {N:161.4,P:36.7,K:107.4,Ca:149.2,Mg:49.3,S:54.4},
   early:{N:161.5,P:59.1,K:132.6,Ca:154.5,Mg:51.8,S:54.8},
   bloom:{N:161.8,P:67.7,K:131.0,Ca:170.5,Mg:56.6,S:61.5},
   late: {N:114.6,P:64.2,K:91.3,Ca:135.3,Mg:44.8,S:51.1}
@@ -708,14 +708,14 @@ const RECIPES={
   },
   veg:{
     label:'Vegetativ',
-    ec:'1,4–1,6 mS/cm', ph:'5,5–6,0',
+    ec:'1,7–1,9 mS/cm', ph:'5,5–6,0',
     items:[
       {name:'TA Micro SW', amt:1.00, unit:'ml'},
       {name:'TA Grow',     amt:1.60, unit:'ml'},
       {name:'Bittersalz',  amt:0.40, unit:'g'},
       {name:'Canna Ca',    amt:0.60, unit:'ml'},
     ],
-    note:'Ca:Mg 3,0:1. Ohne TA Bloom, damit P mit der Säure unter 40 mg/l bleibt.'
+    note:'Ca:Mg 3,0:1. Ohne TA Bloom, damit P mit der Säure unter 40 mg/l bleibt. Gemessene EC dieser Rezeptur: 1,84. Beim Umstieg erst mit 80 % starten.', acid:0.11
   },
   early:{
     label:'Frühe Blüte',
@@ -755,7 +755,7 @@ const RECIPES={
   }
 };
 Object.values(RECIPES).forEach(r=>{
-  r.items.push({name:'pH-Down (H₃PO₄ 59 %)', amt:0.12, unit:'ml'});
+  r.items.push({name:'pH-Down (H₃PO₄ 59 %)', amt:r.acid||0.12, unit:'ml'});
   r.note+=' pH-Down ist ein Richtwert (Leitungswasser pH 8,0 / 4,0 °dH): in kleinen Schritten zugeben und pH messen.';
 });
 
