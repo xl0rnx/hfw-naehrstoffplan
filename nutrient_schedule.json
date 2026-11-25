@@ -1,0 +1,579 @@
+{
+  "meta": {
+    "system": "HFW Mineralwolle Cannabis",
+    "water_source": "Leitungswasser (Analysewerte 2025)",
+    "created": "2025",
+    "revised": "2026-11-15"
+  },
+  "tap_water": {
+    "N": 1.8,
+    "P": 0,
+    "K": 3.1,
+    "Ca": 31.7,
+    "Mg": 1.1,
+    "S": 2.4,
+    "EC_mScm": 0.21,
+    "pH": 8.01,
+    "hardness_dH": 4.7,
+    "carbonate_hardness_dH": 4.0,
+    "B": 0,
+    "Cu": 0,
+    "Fe": 0,
+    "Mn": 0.003,
+    "Mo": 0,
+    "Zn": 0
+  },
+  "fertilizers": {
+    "TA_Micro_Soft_Water": {
+      "unit": "per_ml",
+      "N": 62.5,
+      "N_NO3": 50,
+      "N_NH4": 12.5,
+      "P": 0,
+      "K": 13.49075,
+      "Ca": 53.625,
+      "Mg": 0,
+      "S": 0,
+      "B": 0.125,
+      "Cu": 0.125,
+      "Fe": 1.5,
+      "Mn": 0.875,
+      "Mo": 0.025,
+      "Zn": 0.25
+    },
+    "TA_Grow": {
+      "unit": "per_ml",
+      "N": 34.2,
+      "N_NO3": 22.8,
+      "N_NH4": 11.4,
+      "P": 4.97496,
+      "K": 56.78568,
+      "Ca": 0,
+      "Mg": 5.49936,
+      "S": 0
+    },
+    "TA_Bloom": {
+      "unit": "per_ml",
+      "N": 0,
+      "P": 25.35484,
+      "K": 38.587696,
+      "Ca": 0,
+      "Mg": 21.02058,
+      "S": 23.24
+    },
+    "Bittersalz": {
+      "unit": "per_gram",
+      "Mg": 98.5905,
+      "S": 130
+    },
+    "Canna_Mono_Calcium": {
+      "unit": "per_ml",
+      "N": 70.565,
+      "N_NO3": 70.565,
+      "N_NH4": 0,
+      "Ca": 106.41202
+    },
+    "pH_Down_Phosphorsaeure_59": {
+      "unit": "per_ml",
+      "P": 261.1,
+      "note": "59 % H3PO4, Dichte ca. 1.4 g/ml"
+    }
+  },
+  "ph_correction": {
+    "acid": "Phosphorsäure 59 % (Advanced Hydroponics pH Down Bloom)",
+    "richtwert_ml_per_L": 0.12,
+    "P_from_acid_mgL": 31.3,
+    "note": "Gemessen: 10 L Keimling-Ansatz pH 7.6 -> 1.0 ml = pH 6.1, +0.6 ml = pH 5.14 (zu tief). Ca. 1.2 ml/10 L für pH 5.8. In kleinen Schritten zugeben, unter pH 6 fällt der pH sehr schnell."
+  },
+  "target_ranges": {
+    "vegetative": {
+      "N": [
+        160,
+        230
+      ],
+      "P": [
+        15,
+        40
+      ],
+      "K": [
+        60,
+        200
+      ],
+      "Ca": [
+        45,
+        180
+      ],
+      "Mg": [
+        35,
+        75
+      ],
+      "S": [
+        47,
+        89
+      ],
+      "B": [
+        0.1,
+        0.5
+      ],
+      "Cu": [
+        0.02,
+        0.19
+      ],
+      "Fe": [
+        1.2,
+        4.0
+      ],
+      "Mn": [
+        0.6,
+        1.0
+      ],
+      "Mo": [
+        0.01,
+        0.03
+      ],
+      "Zn": [
+        0.12,
+        0.4
+      ]
+    },
+    "generative": {
+      "N": [
+        160,
+        230
+      ],
+      "P": [
+        25,
+        90
+      ],
+      "K": [
+        60,
+        200
+      ],
+      "Ca": [
+        45,
+        190
+      ],
+      "Mg": [
+        35,
+        75
+      ],
+      "S": [
+        47,
+        180
+      ],
+      "B": [
+        0.1,
+        0.5
+      ],
+      "Cu": [
+        0.02,
+        0.19
+      ],
+      "Fe": [
+        1.2,
+        4.0
+      ],
+      "Mn": [
+        0.6,
+        1.0
+      ],
+      "Mo": [
+        0.01,
+        0.03
+      ],
+      "Zn": [
+        0.12,
+        0.4
+      ]
+    },
+    "late_bloom": {
+      "N": [
+        100,
+        160
+      ],
+      "P": [
+        25,
+        90
+      ],
+      "K": [
+        60,
+        200
+      ],
+      "Ca": [
+        45,
+        190
+      ],
+      "Mg": [
+        35,
+        75
+      ],
+      "S": [
+        47,
+        180
+      ]
+    }
+  },
+  "dosing_schedule": {
+    "cutting_unbewurzelt": {
+      "description": "Nur pH-korrigiertes Wasser, kein Dünger bis Wurzeln sichtbar",
+      "doses": {
+        "TA_Micro_Soft_Water_ml": 0,
+        "TA_Grow_ml": 0,
+        "TA_Bloom_ml": 0,
+        "Bittersalz_g": 0,
+        "Canna_Mono_Calcium_ml": 0
+      },
+      "targets": {
+        "EC_mScm": 0.21,
+        "pH": 5.8
+      },
+      "hfw": {
+        "shots_per_day": 0,
+        "shot_size_ml": 0,
+        "runoff_pct": 0
+      },
+      "notes": "Luftfeuchtigkeit 75-85%, Dome verwenden. Steinwollwürfel bei pH 5,8 vorsättigen."
+    },
+    "cutting_bewurzelt": {
+      "description": "Nach sichtbarer Bewurzelung, EC schrittweise aufbauen",
+      "doses": {
+        "TA_Micro_Soft_Water_ml": 0.3,
+        "TA_Grow_ml": 0.2,
+        "TA_Bloom_ml": 0,
+        "Bittersalz_g": 0.1,
+        "Canna_Mono_Calcium_ml": 0,
+        "pH_Down_Phosphorsaeure_59_ml": 0.12
+      },
+      "targets": {
+        "EC_mScm": [
+          0.4,
+          0.6
+        ],
+        "pH": [
+          5.5,
+          6.0
+        ]
+      },
+      "totals_mgL": {
+        "N": 27.4,
+        "P": 32.3,
+        "K": 18.5,
+        "Ca": 47.8,
+        "Mg": 12.1,
+        "S": 15.4
+      },
+      "ca_mg_ratio": 3.96,
+      "hfw": {
+        "shots_per_day": "2-3",
+        "shot_size_ml": "wenig",
+        "runoff_pct": 0
+      }
+    },
+    "seedling_week1_2": {
+      "description": "Keimling Woche 1-2 (auch zum Einweichen frisch gewurzelter Stecklinge)",
+      "doses": {
+        "TA_Micro_Soft_Water_ml": 0.3,
+        "TA_Grow_ml": 0.15,
+        "TA_Bloom_ml": 0,
+        "Bittersalz_g": 0.1,
+        "Canna_Mono_Calcium_ml": 0,
+        "pH_Down_Phosphorsaeure_59_ml": 0.12
+      },
+      "targets": {
+        "EC_mScm": [
+          0.4,
+          0.6
+        ],
+        "pH": [
+          5.5,
+          6.0
+        ]
+      },
+      "totals_mgL": {
+        "N": 25.7,
+        "P": 32.1,
+        "K": 15.7,
+        "Ca": 47.8,
+        "Mg": 11.8,
+        "S": 15.4
+      },
+      "ca_mg_ratio": 4.06,
+      "hfw": {
+        "shots_per_day": "2-3",
+        "first_shot": "2h nach Licht an",
+        "last_shot": "3h vor Licht aus"
+      },
+      "notes": "Bittersalz 0.10 g (Mg war zu niedrig). Gemessen bei 10 L: EC 0.525 vor Säure. Nach Umsetzen in Würfel 4-7 Tage nicht gießen."
+    },
+    "seedling_week3_4": {
+      "description": "Jungpflanze Woche 3-4, Übergang zu Veg, ohne TA Bloom",
+      "doses": {
+        "TA_Micro_Soft_Water_ml": 0.5,
+        "TA_Grow_ml": 0.4,
+        "TA_Bloom_ml": 0,
+        "Bittersalz_g": 0.15,
+        "Canna_Mono_Calcium_ml": 0.1,
+        "pH_Down_Phosphorsaeure_59_ml": 0.12
+      },
+      "targets": {
+        "EC_mScm": [
+          0.7,
+          0.9
+        ],
+        "pH": [
+          5.5,
+          6.0
+        ]
+      },
+      "totals_mgL": {
+        "N": 53.8,
+        "P": 33.3,
+        "K": 32.6,
+        "Ca": 69.2,
+        "Mg": 18.1,
+        "S": 21.9
+      },
+      "ca_mg_ratio": 3.82,
+      "hfw": {
+        "shots_per_day": "3-4",
+        "first_shot": "1h nach Licht an",
+        "last_shot": "2h vor Licht aus"
+      }
+    },
+    "vegetative": {
+      "description": "Vollständige Veg-Phase, ohne TA Bloom (P kommt aus der Phosphorsäure)",
+      "doses": {
+        "TA_Micro_Soft_Water_ml": 1.0,
+        "TA_Grow_ml": 1.6,
+        "TA_Bloom_ml": 0,
+        "Bittersalz_g": 0.4,
+        "Canna_Mono_Calcium_ml": 0.6,
+        "pH_Down_Phosphorsaeure_59_ml": 0.12
+      },
+      "targets": {
+        "EC_mScm": [
+          1.4,
+          1.6
+        ],
+        "pH": [
+          5.5,
+          6.0
+        ]
+      },
+      "totals_mgL": {
+        "N": 161.4,
+        "P": 39.3,
+        "K": 107.4,
+        "Ca": 149.2,
+        "Mg": 49.3,
+        "S": 54.4,
+        "B": 0.125,
+        "Cu": 0.125,
+        "Fe": 1.5,
+        "Mn": 0.875,
+        "Mo": 0.025,
+        "Zn": 0.25
+      },
+      "ca_mg_ratio": 3.02,
+      "hfw": {
+        "shots_per_day": "6-8",
+        "shot_size_ml": 100,
+        "runoff_pct": [
+          15,
+          20
+        ],
+        "first_shot": "1h nach Licht an",
+        "last_shot": "2h vor Licht aus"
+      }
+    },
+    "early_bloom": {
+      "description": "Frühe Blüte, Woche 1-2 nach Flip",
+      "doses": {
+        "TA_Micro_Soft_Water_ml": 1.0,
+        "TA_Grow_ml": 1.5,
+        "TA_Bloom_ml": 0.8,
+        "Bittersalz_g": 0.26,
+        "Canna_Mono_Calcium_ml": 0.65,
+        "pH_Down_Phosphorsaeure_59_ml": 0.12
+      },
+      "targets": {
+        "EC_mScm": [
+          1.6,
+          1.8
+        ],
+        "pH": [
+          5.5,
+          6.0
+        ]
+      },
+      "totals_mgL": {
+        "N": 161.5,
+        "P": 59.1,
+        "K": 132.6,
+        "Ca": 154.5,
+        "Mg": 51.8,
+        "S": 54.8,
+        "B": 0.125,
+        "Cu": 0.125,
+        "Fe": 1.5,
+        "Mn": 0.875,
+        "Mo": 0.025,
+        "Zn": 0.25
+      },
+      "ca_mg_ratio": 2.98,
+      "hfw": {
+        "shots_per_day": "8-10",
+        "shot_size_ml": 120,
+        "runoff_pct": [
+          15,
+          20
+        ],
+        "first_shot": "1h nach Licht an",
+        "last_shot": "2h vor Licht aus"
+      }
+    },
+    "full_bloom": {
+      "description": "Vollblüte, Woche 3-6 nach Flip",
+      "doses": {
+        "TA_Micro_Soft_Water_ml": 1.0,
+        "TA_Grow_ml": 1.2,
+        "TA_Bloom_ml": 1.2,
+        "Bittersalz_g": 0.24,
+        "Canna_Mono_Calcium_ml": 0.8,
+        "pH_Down_Phosphorsaeure_59_ml": 0.12
+      },
+      "targets": {
+        "EC_mScm": [
+          1.7,
+          2.0
+        ],
+        "pH": [
+          5.5,
+          6.0
+        ]
+      },
+      "totals_mgL": {
+        "N": 161.8,
+        "P": 67.7,
+        "K": 131.0,
+        "Ca": 170.5,
+        "Mg": 56.6,
+        "S": 61.5,
+        "B": 0.125,
+        "Cu": 0.125,
+        "Fe": 1.5,
+        "Mn": 0.875,
+        "Mo": 0.025,
+        "Zn": 0.25
+      },
+      "ca_mg_ratio": 3.01,
+      "hfw": {
+        "shots_per_day": "10-12",
+        "shot_size_ml": 120,
+        "runoff_pct": [
+          20,
+          25
+        ],
+        "first_shot": "1h nach Licht an",
+        "last_shot": "2h vor Licht aus"
+      },
+      "notes": "EC nur als Kontrolle, Rezeptur hat Vorrang. Reale EC einmal messen und notieren."
+    },
+    "late_bloom": {
+      "description": "Spätblüte / Reifung, Woche 7+ nach Flip",
+      "doses": {
+        "TA_Micro_Soft_Water_ml": 1.0,
+        "TA_Grow_ml": 0.5,
+        "TA_Bloom_ml": 1.2,
+        "Bittersalz_g": 0.16,
+        "Canna_Mono_Calcium_ml": 0.47,
+        "pH_Down_Phosphorsaeure_59_ml": 0.12
+      },
+      "targets": {
+        "EC_mScm": [
+          1.0,
+          1.4
+        ],
+        "pH": [
+          5.8,
+          6.2
+        ]
+      },
+      "totals_mgL": {
+        "N": 114.6,
+        "P": 64.2,
+        "K": 91.3,
+        "Ca": 135.3,
+        "Mg": 44.8,
+        "S": 51.1,
+        "B": 0.125,
+        "Cu": 0.125,
+        "Fe": 1.5,
+        "Mn": 0.875,
+        "Mo": 0.025,
+        "Zn": 0.25
+      },
+      "ca_mg_ratio": 3.02,
+      "hfw": {
+        "shots_per_day": "6-8",
+        "shot_size_ml": 100,
+        "runoff_pct": [
+          15,
+          20
+        ],
+        "first_shot": "1h nach Licht an",
+        "last_shot": "3h vor Licht aus"
+      },
+      "notes": "N-Drawdown gewollt. Flush vor Ernte optional (3-7 Tage), umstritten."
+    },
+    "flush": {
+      "description": "Optional, 3-7 Tage vor Ernte",
+      "doses": {
+        "TA_Micro_Soft_Water_ml": 0,
+        "TA_Grow_ml": 0,
+        "TA_Bloom_ml": 0,
+        "Bittersalz_g": 0,
+        "Canna_Mono_Calcium_ml": 0
+      },
+      "targets": {
+        "EC_mScm": [
+          0.21,
+          0.3
+        ],
+        "pH": [
+          6.0,
+          6.5
+        ]
+      },
+      "notes": "Nur pH-korrigiertes Leitungswasser. Runoff-EC Ziel unter 0.3 mS/cm."
+    }
+  },
+  "mixing_order": [
+    "1. Wasser auf Zielvolumen",
+    "2. TA Micro einrühren",
+    "3. TA Grow einrühren",
+    "4. TA Bloom einrühren",
+    "5. Bittersalz separat auflösen, dann zugeben",
+    "6. Canna Mono Calcium zuletzt — nie pur mit Micro mischen",
+    "7. EC messen",
+    "8. pH korrigieren mit Phosphorsäure 59 % (ca. 0.12 ml/L, in kleinen Schritten)"
+  ],
+  "runoff_monitoring": {
+    "optimal": "Runoff EC = Feed EC ± 0.3 mS/cm",
+    "salt_buildup": "Runoff EC > Feed EC + 0.5 → Schussgröße erhöhen oder Spülschuss",
+    "too_dry": "Runoff EC < Feed EC - 0.3 → Shots pro Tag erhöhen",
+    "pH_too_high": "Runoff pH > 6.2 → Feed-pH auf 5.5 absenken",
+    "pH_too_low": "Runoff pH < 5.2 → Feed-pH auf 6.0 erhöhen"
+  },
+  "micro_constraint": {
+    "note": "TA Micro SW max 1.0 ml/L — bei 1.5ml überschreiten Mo (0.038 vs max 0.03), Mn (1.31 vs max 1.0), Cu (0.19 = Grenze)",
+    "at_1ml": {
+      "B": 0.125,
+      "Cu": 0.125,
+      "Fe": 1.5,
+      "Mn": 0.875,
+      "Mo": 0.025,
+      "Zn": 0.25
+    }
+  }
+}
